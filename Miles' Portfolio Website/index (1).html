@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            Miles Harrington
+        </section>
+        <nav class="header-nav hide-mobile">
+            <ul>
+                <li><a href="#about-container">About</a></li>
+                <li><a href="#contact-container">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hamburger-menu-container hide-desktop">
+            <img class="hamburger-icon" onclick="openMenu()" src="Miles' Portfolio Images/Menu.svg" alt="hamburger-menu-icon">
+            <nav>
+                <ul class="hamburger-menu" id="hamburger-menu">
+                    <li><img onclick="closeMenu()" src="Miles' Portfolio Images/MacOS Close.svg" alt="Close menu"></li>
+                    <li><a href="#about-container" onclick="closeMenu()">About</a></li>
+                    <li><a href="#contact-container" onclick="closeMenu()">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="hero-container">
+            <section class="hero-title">
+                <p class="show-laptop">
+                    Hello, I am a <span>Front-end Web <br> Developer</span> from the USA.
+                </p>
+                <p class="show-desktop">
+                    Hello, I am a <br> <span>Front-end Web <br> Developer</span> from the USA.
+                </p>
+                <p class="show-phone">
+                    Hello, <br> I am a <br> <span>Front-end <br> Web <br> Developer</span> <br> from the <br> USA.
+                </p>
+
+                <p class="show-tablet">
+                    Hello, <br> I am a <span>Front-end <br> Web Developer</span> <br> from the USA.
+                </p>
+            <section class="socials-button-container">
+                <a href="https://www.linkedin.com/in/milesharrington" target="_blank"><img class="social-button" src="Miles' Portfolio Images/LinkedIn Circled.svg" alt="Linkedin"></a>
+                <a href="https://github.com/MilesHarrington01" target="_blank"><img class="social-button" src="Miles' Portfolio Images/GitHub.svg" alt="GitHub"></a>
+                <a href="https://docs.google.com/document/d/1ACnSMp0nKCG3mfPGxkFgdv_1NkOzApr8qg-sGaPMlNE" target="_blank"><img class="resume-button" src="Miles' Portfolio Images/Resume Btn.svg" alt="Resume"></a>
+            </section>
+            </section>
+            <section class="profile-image-container">
+                <img class="profile-image" src="Miles' Portfolio Images/Profile Pic.svg" alt="Profile Picture">
+            </section>
+        </section>
+        <section class="about-container" id="about-container">
+            <h2>About</h2>
+            <section class="about-intro">
+                <p class="phone-intro">
+                    Hello, I am Miles Harrington. I am a <br> student at Guilford Technical <br>
+                    Community College in Greensboro, <br> NC. I am studying Computer <br>
+                    Science with a passion for Front-end <br> web development. 
+                </p>
+
+                <p class="tablet-intro">
+                    Hello, I am Miles Harrington. I am a student at Guilford Technical <br>
+                    Community College in Greensboro, NC. I am studying Computer <br>
+                    Science with a passion for Front-end  web development. 
+                </p>
+                
+            </section>
+            <section class="about-academic-achievements">
+                <h3 class="hide-laptop hide-desktop">Academic <br> Achievements:</h3>
+                <h3 class="laptop-academic-heading">Academic Achievements:</h3>
+                <ul class="phone-about-list">
+                    <li>Honor's List</li>
+                    <li>In the top 10% of students at <br> Guilford Technical Community <br> College</li>
+                    <li>Honor's Society Phi Theta Kappa</li>
+                    <li>GPA: 3.591</li>
+                </ul>
+                <ul class="laptop-about-list">
+                    <li>Honor's List</li>
+                    <li>In the top 10% of students at Guilford Technical Community College</li>
+                    <li>Honor's Society Phi Theta Kappa</li>
+                    <li>GPA: 3.591</li>
+                </ul>
+                <ul class="tablet-about-list">
+                    <li>Honor's List</li>
+                    <li>In the top 10% of students at <br> Guilford Technical Community College</li>
+                    <li>Honor's Society Phi Theta Kappa</li>
+                    <li>GPA: 3.591</li>
+                </ul>
+            </section>
+            <section class="about-skills-achievements">
+                <h3>Skills:</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Figma</li>
+                </ul>
+            </section>
+        </section>
+        <section class="contact-me-section" id="contact-container">
+            <h2>Contact</h2>
+            <a href="mailto: milesharrington48@gmail.com"><img class="contact-button" src="Miles' Portfolio Images/Contact Button.svg" alt="Contact button"></a>
+        </section>
+       
+    </main>
+</body>
+</html>
